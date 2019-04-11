@@ -4,10 +4,13 @@
 	--color: #000;
 	text-align: center;
 	display: none;
-	h1{
-		margin:29px;
+	h3{
+        margin:29px;
+        color: var(--color-light);
+	    font-size: 30px;
 	}
 	p{
+        color: var(--color);
 		margin:15px;
 	}
 	button{
