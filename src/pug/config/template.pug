@@ -1,0 +1,37 @@
+block config
+  include variables
+doctype html
+html(lang="es")
+  head
+    title TNX tim
+    meta(charset="utf-8")
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    meta(name="twitter:card" content="summary_large_image")
+    //- meta(name="twitter:site" content=twitterAccount)
+    meta(property="og:title" content=pageTitle)
+    meta(property="og:description" content=pageDescription)
+    meta(property="og:image" content=pageImage)
+    //- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    link(rel="stylesheet" href="assets/css/new/styles.css")
+    link(rel="shortcut icon" href="assets/img/icon.png")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" )
+    
+  body(id="body",onresize="FuntionResize()")
+    .containe-all
+      block menu
+        include ../components/menu.pug
+      block main
+
+      block footer
+        include ../includes/footer.pug
+    script
+      include ../../js/modules/register-active.js
+
+    script
+      include ../../js/modules/panel.js
+    script
+      include ../../js/modules/menu.js    
+    script
+      include ../../js/modules/template.js  
+      
+

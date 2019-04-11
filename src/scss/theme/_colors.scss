@@ -1,0 +1,137 @@
+:root{
+	--color-first: #031B2C;
+	--color-second:#0089EE;
+	--color-third: #EC1800;
+	--color-quarter: #BC1300;
+	--color-h2: #00497D;
+	--color-h1:#003154;
+	--color-text-opaque:#E8E8E8;
+	--color-text:#000000;
+	--color-light:#f5f5f5;
+	//dark color
+	--color-dark       : #282D31;
+	--color-dark-alt   : #141618;
+	--color-panel-second:rgba(0,0,0,.5);
+	--color-background-bck: #E2E9FF;
+}
+
+.text-white{
+	--color-text:#ffff;
+	--color-h2:#f5f5f5;
+}
+.button-first{
+	--color-button: 		var(--color-first);
+	--color-button-hover: 	var(--color-second);
+}
+.button-second{
+	--color-button: 		var(--color-third);
+	--color-button-hover: 	var(--color-quarter);
+}
+.first{
+	--color:var(--color-first);
+}
+.second{
+	--color:var(--color-second);
+}
+.third{
+	--color:var(--color-light);
+}
+.female{
+	--color-gender: #F1005B;
+}
+.male{
+	--color-gender:#005797;
+}
+
+//COLOR SOCIAL NETWORK
+.facebook{
+	--color-social-network:#3B5998;
+	--color-text:#fff;
+	--color-border: #3B5998;
+}
+.google{
+	--color-social-network:#fff;
+	--color-text:#0089EE;
+}
+//panels
+.container-signup{
+	--color-panel:#D80021;
+}
+.container-login{
+	--color-panel:#fff;
+	--color-text-opaque:#9B9B9B;
+}
+
+.balls{
+	--color-balls:var(--color-first);
+	--color-content-balls:var(--color-second);
+	.menu-open-button{
+		--color-balls:var(--color-quarter);
+		--color-content-balls:var(--color-light);
+	}
+}
+
+//dark mode
+.dark-mode{
+	--color-h1:#65B0FF;
+	--color-background-bck:var(--color-dark);
+	--color-panel-second:rgba(191,191,191,.5);
+	--color-text:#ffff;
+	--color-h2:#f5f5f5;
+	.first{
+		--color:var(--color-light);
+	}
+	.container-signup{
+		--color-panel:var(--color-dark);
+	}
+	.button-first{
+		--color-button: 		var(--color-first);
+		--color-button-hover: 	var(--color-second);
+	}
+	.button-second{
+		--color-button: 		#E84110;
+		--color-button-hover: 	#B82A00;
+	}
+	.container-login{
+		// 35475D
+		--color-panel:#2A3B71;
+	}
+	.balls{
+		--color-balls:#E84110;
+		--color-content-balls:var(--color-light);
+		.menu-open-button{
+			--color-balls:var(--color-quarter);
+			
+		}
+	}
+}
+
+
+
+
+//scss
+
+$color-first: #031B2C;
+$color-second:#0089EE;
+$color-third: #EC1800;
+$color-quarter: #BC1300;
+$color-h2: #00497D;
+$color-h1:#003154;
+$color-text-opaque:#9B9B9B;
+$color-text:#000000;
+$color-light:#f5f5f5;
+$color-social-network:#fff;
+$color-gender:black;
+//COLOR SOCIAL NETWORK
+.facebook{
+	$color-social-network:#3B5998;
+}
+.google{
+	$color-social-network:#D50F25;
+}
+.female{
+	$color-gender: #F1005B;
+}
+.male{
+	$color-gender:#005797;
+}

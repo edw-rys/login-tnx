@@ -1,0 +1,69 @@
+/*botones start*/
+.button{
+	background: var(--color-button);
+	border: 2px solid var(--color-first);
+	border-radius: 6px;
+    padding: 5px 8px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--color-light); 
+}
+
+.button:hover {
+      background-color: var(--color-button-hover);
+      color: white;
+}
+/*botones end*/
+/*social*/
+
+.social-login{
+    margin: 10px;
+}
+.loginBtn {
+    box-sizing: border-box;
+    position: relative;
+    /* width: 13em;  - apply for fixed size */
+    margin: 0.2em;
+    padding: 0 15px 0 46px;
+    border: none;
+    text-align: left;
+    line-height: 34px;
+    white-space: nowrap;
+    border-radius: 0.2em;
+    font-size: 16px;
+    color: var(--color-text);
+    background-color: var(--color-social-network);
+    background-image: linear-gradient(var(--color-social-network), var(--color-social-network));
+    /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+    text-shadow: 0 -1px 0 var(--color-social-network);
+    .icon{
+        // content: "";
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 1.5em;
+        height: 100%;
+        border-right: darken($color-social-network,45%) 1px solid;
+        padding: 6px 6px;
+        img{
+            width: 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &:focus{
+        outline: none;
+        background-color: var(--color-social-network);
+        background-image: darken($color-social-network,45%);
+    }
+    
+    &:active{
+        box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+    }
+  }

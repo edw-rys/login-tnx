@@ -1,0 +1,96 @@
+extends ../config/template
+append config
+  -pageTitle = 'Home'
+  -pageDescription = 'Pagina inicial de EDboilerplate'
+  //- -pageImage = ''
+
+block main
+  -let urlIconGoogle="./assets/img/icons/google.svg"
+  -let urlIconMale="./assets/img/icons/male.svg"
+  -let urlIconFemale="./assets/img/icons/female.svg"
+  -let logo="./assets/img/icon.png"
+  header.page-tnx
+    //- h1 Page Tnx
+    img(src=logo,class="logo")
+  #block-form.block-form.ll
+    
+    #container-login.container-login.contaner-tnx.first
+      h2 Ingresar
+      .form-login
+        form()
+          label
+            input(type="text",id="userLI",placeholder="Usuario",required)
+            i.fas.fa-user
+          label
+            input(type="password",placeholder="Contraseña",required)
+            i.fas.fa-key
+          .op-submit
+            a(href="#") ¿Olvidó su contraseña?
+            input(type="submit",class="submit button button-first",value="Ingresar")
+      .line-symbol
+      p Iniciar sesión por medio de:
+      .social-login
+        button.loginBtn.facebook facebook
+          i.icon.fab.fa-facebook-f
+        button.loginBtn.google Google
+              i(class="icon") ...
+                img(src=urlIconGoogle, alt="")
+    #container-signup.container-signup.contaner-tnx.third.text-white.ocultar-panel
+      .signup-open
+        .open
+          h2 Registrarse
+          #icon-open.icon-open: i#fas.fas.fa-user-plus
+        #content-signup.content-signup
+          .form-signup
+            form(action="", onsubmit="return validateRegister()")
+              label
+                input(type="text",id="name",placeholder="Nombre",required)
+                i.fas.fa-user
+              label
+                p @
+                input(type="text",id="username",class="us",placeholder="Usuario",required)
+                i.fas.fa-user
+              label
+                input(type="password",id="psw1",placeholder="Contraseña",required)
+                i.fas.fa-key
+              .container
+                //- div.title
+                //-   h3 Género
+                .radio-tile-group  
+                  .input-container.male
+                    input(type="radio",id="male",class="radio-button",name="gender")
+                    .radio-tile
+                      .icon.male-icon
+                        img(src=urlIconMale, alt="")
+                        //- i.fas.fa-male
+                      div:label.radio-tile-label Maculino
+                  .input-container.female
+                    input(type="radio",id="female",class="radio-button",name="gender")
+                    .radio-tile
+                      .icon.female-icon
+                        img(src=urlIconFemale, alt="")
+                        //- i.fas.fa-female
+                      div:label.radio-tile-label Femenino    
+              .op-submit
+                input(type="submit",class="submit button button-second",value="Registrar")
+          .line-symbol
+          p Registrarse por medio de:
+          .social-login
+            button.loginBtn.facebook facebook
+              i.icon.fab.fa-facebook-f
+            button.loginBtn.google Google
+              i(class="icon")  ...
+                img(src=urlIconGoogle, alt="")
+    
+  .opciones-tnx
+    .op-tnx.registro-tnx
+      h1(class="oculto-nan-r") ¿No posee una cuenta?
+      p(class="oculto-nan-r") Registrate ahora
+      button(class="oculto-nan-r button button-first",onclick="activarRegistro();") REGISTRAR
+    .op-tnx.ingreso-tnx
+      .oculto-nan-i.oculto
+        h1(class="oculto-nan-i oculto") ¿No posee una cuenta?
+        p(class="oculto-nan-i oculto") Registrate ahora
+        button(class="oculto-nan-i oculto button button-second",onclick="activarLogIn();") REGISTRAR
+  
+  
