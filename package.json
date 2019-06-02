@@ -1,7 +1,7 @@
 {
-  "name": "ed-boilerplate",
+  "name": "gallery-with-login",
   "version": "1.0.0",
-  "description": "Simple scafolding for statics web projects",
+  "description": "",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
@@ -10,7 +10,7 @@
     "images": "gulp images",
     "sitemap": "gulp sitemap"
   },
-  "author": "Alvaro Felipe",
+  "author": "Reyes Edw",
   "license": "GPL-2.0",
   "devDependencies": {
     "babel-core": "^6.26.3",
